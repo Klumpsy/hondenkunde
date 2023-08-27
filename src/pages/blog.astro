@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 
 const pageTitle = "Blog";
 ---
+<Navigation/>
 <Layout title={pageTitle}>
 	<main>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
 		<h1>
             <span class="text-gradient">{pageTitle}</span>
         </h1>
