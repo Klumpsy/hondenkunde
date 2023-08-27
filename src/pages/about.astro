@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 
 const pageTitle = "About";
@@ -16,7 +16,7 @@ const products = ["Kluifjes", "Speeltjes", "Verzorging"];
 const productColor = 'navy';
 ---
 
-<Layout title={pageTitle}>
+<BaseLayout title={pageTitle}>
 	<main>
 		<h1>
             <span class="text-gradient">{pageTitle}</span>
@@ -38,7 +38,7 @@ const productColor = 'navy';
   			{products.map((skill) => <li class="product">{skill}</li>)}
 		</ul>
 	</main>
-</Layout>
+</BaseLayout>
 
 <style define:vars={{productColor}}>
 	

@@ -1,26 +1,28 @@
 ---
 import Social from './Social.astro';
 
-const platform = "github";
-const username = "klumpsy";
 ---
 
 <footer>
   <p>
-    Learn more about my projects on 
-    <a href={`https://www.${platform}.com/${username}`}>
-        {platform}
-    </a>!
+    &#169 Hondenkunde.nl 
  </p>
-  <Social platform="twitter" username="hondenkunde" />
-  <Social platform="github" username="klumpsy" />
-  <Social platform="youtube" username="hondenkunde" />
+  <div class="social_icon_container">
+    <Social platform="twitter" username="hondenkunde" />
+    <Social platform="github" username="klumpsy" />
+    <Social platform="youtube" username="hondenkunde" />
+  </div>
 </footer>
 
 <style>
     footer {
       display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid black;
       gap: 1rem;
       margin-top: 2rem;
     }
+
+    .social_icon_container 
   </style>
